@@ -1,0 +1,94 @@
+*{ /* selecteur permettant de réinitialiser les style par défaut du navigateur*/
+	margin: 0px;
+	padding: 0px;
+	font-family: Avenir, sans-serif;
+}
+
+nav{ /* mets en forme tout ce qui est contenue dans la balise nav */
+	width: 100%;
+	margin: 0 auto;
+	background-color: #64abfb;
+	top: 0px;
+	position: sticky;
+}
+
+nav ul{
+	list-style-type: none; /* permet de définir l'apparence de la puce d'un élément de liste */
+}
+
+nav ul li{
+	float: left;
+	width: 25%;
+	text-align: center;
+	position: relative;
+}
+
+nav ul::after{
+	content: ""; 
+	display: table;
+	clear: both;
+}
+
+nav a{
+	display: block;
+	text-decoration: none;
+	color: white;
+	border-bottom: 10px solid transparent;
+	padding: 10px 0px;
+}
+
+nav a:hover{ /* permet de spécifier l'apparence d'un élément au moment où l'utilisateur le survole avec le pointeur */
+	color: gold;
+	border-bottom: 5px solid gold;
+}
+
+nav > ul li:hover .sous{
+	display: block;
+}
+
+.sous{
+	display: none;
+	box-shadow: 0px 1px 2px #CCC; /* ombre de la box */
+	background-color: #64abfb;
+	position: absolute;
+	width: 100%;
+	z-index: 1000; /* mise en avant d'un élement */
+}
+
+.sous li{
+	float: none;
+	width: 100%;
+	text-align: left;
+}
+
+.sous a{
+	padding: 10px;
+	border-bottom: gold;
+}
+
+.sous a:hover{
+	border-bottom: gold;
+	background-color: RGBa(200,200,200,0.3);
+}
+
+.deroulant{
+	width: 290px;
+	height: 15%;
+	color: white;
+	text-align: center;
+	margin-top: 25px;
+}
+
+.deroulant a::after{
+	font-size: 20px;
+}
+
+.Acceuil{
+	width: 5%;
+	height: 10%;
+}
+
+.logo{
+	width: 50px;
+	height: 5%;
+}
