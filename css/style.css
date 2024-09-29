@@ -1,0 +1,195 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    width: -webkit-fill-available;
+}
+
+.header {
+    padding: 20px 0px 20px 10px ;
+    background-image: linear-gradient(to right, #de6262, #ffb88c);
+    background-color: #de6262;
+}
+
+.navbar-brand{
+    color: white;
+    font-size: 30px;
+}
+
+.nav-link{
+    color: white;
+    font-size: 20px;
+}
+
+.navbar-brand:hover, .nav-link:hover, .dropdown-item:hover{
+    color: #ffb88c;
+}
+
+.menu{
+    width: 55px;
+    height: 55px;
+}
+
+.panier, .coeur, .profil{
+    width: 90%;
+}
+
+.rouge:hover .coeur{
+    color: red;
+    filter: invert(21%) sepia(89%) saturate(7482%) hue-rotate(357deg) brightness(94%) contrast(118%);
+    /*commande permettant de colorer que le contour de l'image que l'on a choisie*/
+    /*combinaison de filtre change et augmente le contrastre de couleur*/
+    /*invert(%) : Inverse les couleurs de l'image.
+    sepia(%) : Applique un effet sépia à l'image.
+    saturate(%) : Ajuste la saturation des couleurs de l'image.
+    hue-rotate(deg) : Fait pivoter les teintes de l'image autour du cercle chromatique.
+    brightness(%) : Ajuste la luminosité de l'image.
+    contrast(%) : Ajuste le contraste de l'image.*/
+}
+
+.bleu:hover .panier {
+    filter: invert(41%) sepia(77%) saturate(1603%) hue-rotate(179deg) brightness(101%) contrast(101%);
+}
+
+.icone-menu .nav-item {
+    margin-left: 10px;
+}
+
+main{
+    margin: 20px;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+    justify-items: center;
+}
+
+article{
+    align-items: center;
+}
+
+.card{
+    width: 20rem;
+    height: 38rem;
+}
+
+.card-button{
+    display: flex;
+    align-content: flex-end;
+    justify-content: right;
+}
+
+.btn{
+    width: 25%;
+    padding: 6px 3px 6px 3px;
+    margin: 0px 2.5px 0px 2.5px;
+}
+
+.icone{
+    width: 30%;
+}
+
+footer{
+    height: auto;
+    width: 100%;
+    background-image: linear-gradient(to right, #de6262, #ffb88c); /* Définir la couleur de fond */
+    background-color: #de6262; /* Utilisez une couleur solide si nécessaire */
+}
+
+.logo{
+    margin-top: 30px;
+    width: 200px;
+    display: flex;
+}
+
+.RS{
+    display: flex;
+    padding: 0px;
+}
+
+.reseau{
+    width: 100px;
+}
+
+.contact{
+    margin-top: 30px;
+}
+
+li, a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+li.claire:hover{
+    color: #ffb88c;
+}
+
+a:hover, .nav:hover{
+    color: #de6262;
+}
+
+button.nav{
+    background-color: transparent;
+    color: white;
+    width: 300px;
+    height: 50px;
+    font-size: large;
+    margin: 20px;
+    border-color:#de6262;
+    border-width: 5px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1400px) {
+    .dropdown-menu{
+        background-color: transparent;
+        border: none;
+    }
+
+    section{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 10px;
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1100px) {
+    .dropdown-menu{
+        background-color: transparent;
+        border: none;
+    }
+
+    section{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .dropdown-menu{
+        background-color: transparent;
+        border: none;
+    }
+
+    section{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 10px;
+    }
+}
+
