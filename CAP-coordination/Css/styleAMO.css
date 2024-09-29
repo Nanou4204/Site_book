@@ -1,0 +1,147 @@
+body{
+    background-image: url(../image/Fond_noir.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 1px;
+}
+
+main{
+    flex: 1;
+}
+
+header{
+    block-size: auto;
+    background-color: rgb(30, 30, 30);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 28px;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: center;
+}
+
+section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+img.left{
+    float: left;
+    width: 470px;
+    height: 419px;
+    margin: 20px;
+    display: flex;
+    align-content: center;
+}
+
+article{
+    border-radius: 50px;
+    background-color: rgb(30, 30, 30);
+    border: 3px solid white;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+article.article2{
+    width: 500px;
+    height: fit-content;
+}
+
+p.description{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: normal;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 28px;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+p.text{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    margin-left: 20px;
+    font-weight: normal;
+}
+
+a{
+    text-decoration: none;
+}
+
+.OPC{
+    color: #CCD223;
+}
+
+footer{
+    background-color: rgb(30, 30, 30);
+    border: 3px solid white;
+    height: fit-content;
+    width: -webkit-fill-available;
+    border-radius: 25px;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 28px;
+}
+
+.info{
+    font-size: 16px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.logo{
+    display: inline-block;
+}
+
+.info-comp{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-small;
+    text-align: center;
+}
+
+a.white_under{
+    color: white;
+    text-decoration: none;
+}
+
+a.white_under:hover{
+    text-decoration: underline solid 2px;
+}
+
+
+a.white{
+    color: white;
+    text-decoration: none;
+}
+
+a.white:hover{
+    text-decoration: none;
+}

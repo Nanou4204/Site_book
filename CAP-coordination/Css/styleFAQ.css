@@ -1,0 +1,143 @@
+body{
+    background-image: url(../image/Fond_noir.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 1px;
+}
+
+main{
+    flex: 1;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 28px;
+}
+
+header{
+    block-size: auto;
+    background-color: rgb(30, 30, 30);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 28px;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main{
+    padding: 20px;
+}
+
+p.under, p.description{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: normal;
+}
+
+h1{
+    text-align: center;
+}
+
+/*Gestion FAQ accordeon*/
+.FAQ_list{
+    margin: 60px auto;
+    width: 600px;
+}
+
+.FAQ_list li{ /*S'occupe de la mise en page des éléments de la liste*/
+    list-style: none;
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgb(30, 30, 30);
+}
+
+.FAQ_list li label{ /* S'occupe de la question de notre FAQ*/
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 400;
+    cursor: pointer; /*Montre qu'un élément est cliquable*/
+}
+
+label::after{ /*place un élément avant la question*/
+    content: "+";
+    margin: 10px;
+    font-size: 30px;
+}
+
+input[type="checkbox"]{ /*Mise en page boutton cliquable pour le faire disparaitre*/
+    display: none;
+}
+
+.FAQ_list .content{ /*Pour la mise en page du contenue de l'accordéon*/
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s; /*transition hidez to visible*/
+}
+
+.FAQ_list input[type="checkbox"]:checked + label + .content{ /*Verification de l'endroitt cliqué*/
+    max-height: 400px;
+    padding: 10px 10px 20px;
+}
+
+.FAQ_list input[type="checkbox"]:checked + label::after{
+    content: "-";
+}
+/*Fin gestion menu accordéon*/
+
+footer{
+    background-color: rgb(30, 30, 30);
+    border: 3px solid white;
+    height: fit-content;
+    width: -webkit-fill-available;
+    border-radius: 25px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.logo{
+    display: inline-block;
+}
+
+.info-comp{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-small;
+    text-align: center;
+}
+
+a.white_under{
+    color: white;
+    text-decoration: none;
+}
+
+a.white_under:hover{
+    text-decoration: underline solid 2px;
+}
+
+a.white{
+    color: white;
+    text-decoration: none;
+}
+
+a.white:hover{
+    text-decoration: none;
+}

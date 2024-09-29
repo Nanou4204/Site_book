@@ -1,0 +1,147 @@
+body{
+    background-image: url(../image/Fond_noir.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 1px;
+}
+
+main{
+    flex: 1;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 28px;
+}
+
+header{
+    block-size: auto;
+    background-color: rgb(30, 30, 30);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 28px;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: center;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article{
+    text-align: center;
+    border-radius: 50px;
+    background-color: rgb(30, 30, 30);
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.article2_left::after, .article2_right::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+article.article2_left{
+    width: 1000px;
+    height: fit-content; 
+}
+
+article.article2_right{
+    width: 1000px;
+    height: fit-content;
+}
+
+img.left{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 500%;
+    float: left;
+    shape-outside: margin-box;
+    margin: 20px 10px 5px 10px;
+}
+
+img.right{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    float: right;
+    shape-outside: margin-box;
+    margin: 20px 10px 5px 10px;
+}
+
+p.description{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: normal;
+}
+
+a{
+    text-decoration: none;
+}
+
+footer{
+    background-color: rgb(30, 30, 30);
+    border: 3px solid white;
+    height: fit-content;
+    width: -webkit-fill-available;
+    border-radius: 25px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.logo{
+    display: inline-block;
+}
+
+.info-comp{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-small;
+    text-align: center;
+}
+
+a.white_under{
+    color: white;
+    text-decoration: none;
+}
+
+a.white_under:hover{
+    text-decoration: underline solid 2px;
+}
+
+
+a.white{
+    color: white;
+    text-decoration: none;
+}
+
+a.white:hover{
+    text-decoration: none;
+}
